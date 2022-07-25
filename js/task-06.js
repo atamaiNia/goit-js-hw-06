@@ -24,8 +24,8 @@
 
 const inputRef = document.querySelector("#validation-input");
 
-function OnCheckInputLength(element) {
-  if (element.currentTarget.value.length === Number(inputRef.dataset.length)) {
+function OnCheckInputLength(symbols) {
+  if (symbols.currentTarget.value.length === Number(inputRef.dataset.length)) {
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
   } else {
