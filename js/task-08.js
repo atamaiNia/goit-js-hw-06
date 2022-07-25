@@ -19,9 +19,9 @@
 
 const formRef = document.querySelector(".login-form");
 
-formRef.addEventListener("submit", onCheckingFieldsOfForm);
+formRef.addEventListener("submit", onCheckFieldsOfForm);
 
-function onCheckingFieldsOfForm(event) {
+function onCheckFieldsOfForm(event) {
   // 1.заборонити сторінці перезавантажуватися
   event.preventDefault();
 

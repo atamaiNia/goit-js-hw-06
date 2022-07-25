@@ -9,10 +9,10 @@ const refs = {
   spanText: document.querySelector("#text")
 };
 
+refs.input.addEventListener("input", onChangeFontSize);
+// console.log(onChangeFontSize());
+
 function onChangeFontSize() {
   refs.spanText.style.fontSize = refs.input.value + "px";
   //   console.log(refs.spanText.style.fontSize);
 }
-
-refs.input.addEventListener("input", onChangeFontSize);
-// console.log(onChangeFontSize());

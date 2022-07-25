@@ -8,6 +8,8 @@ const refs = {
   spanText: document.querySelector("#name-output")
 };
 
+refs.input.addEventListener("input", OnInputWriteName);
+
 function OnInputWriteName(name) {
   if (name.target.value !== "") {
     refs.spanText.textContent = name.target.value;
@@ -15,5 +17,3 @@ function OnInputWriteName(name) {
     refs.spanText.textContent = "Anonymous";
   }
 }
-
-refs.input.addEventListener("input", OnInputWriteName);

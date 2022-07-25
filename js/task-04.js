@@ -21,11 +21,15 @@ const valueRef = document.querySelector("#value");
 
 let counterValue = 0;
 
+incrementBtnRef.addEventListener("click", OnClickBtnIncreaseValue);
+
 function OnClickBtnIncreaseValue() {
   counterValue += 1;
   console.log("Клікнули на інкремент");
   valueRef.textContent = counterValue;
 }
+
+decrementBtnRef.addEventListener("click", OnClickBtnDecreaseValue);
 
 function OnClickBtnDecreaseValue() {
   counterValue -= 1;
@@ -35,7 +39,3 @@ function OnClickBtnDecreaseValue() {
   console.log("Клікнули на дескремент");
   valueRef.textContent = counterValue;
 }
-
-incrementBtnRef.addEventListener("click", OnClickBtnIncreaseValue);
-
-decrementBtnRef.addEventListener("click", OnClickBtnDecreaseValue);

@@ -24,6 +24,8 @@
 
 const inputRef = document.querySelector("#validation-input");
 
+inputRef.addEventListener("blur", OnCheckInputLength);
+
 function OnCheckInputLength(symbols) {
   if (symbols.currentTarget.value.length === Number(inputRef.dataset.length)) {
     inputRef.classList.remove("invalid");
@@ -33,5 +35,3 @@ function OnCheckInputLength(symbols) {
     inputRef.classList.remove("valid");
   }
 }
-
-inputRef.addEventListener("blur", OnCheckInputLength);
